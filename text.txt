@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashil Carpet | Premium Persian Carpet Brand</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Yashil Carpet – Premium carpet brand inspired by Ancient Persia. Coming Soon." />
+  <meta name="keywords" content="Yashil Carpet, Persian Carpet, Luxury Carpet, Iranian Carpet" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Yashil Carpet | Premium Carpet Brand" />
+  <meta property="og:description" content="Inspired by Ancient Persia. Crafted with the finest fibers." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background: radial-gradient(circle at top, #3b0a12, #0a0507); color: #fff; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 420px;
+      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 100%;
+      background: linear-gradient(145deg, #4a0f19, #1a060a);
+      border-radius: 24px;
+      padding: 40px 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #8c1d2c, #5b0f19);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    .domain { opacity: 0.7; font-size: 14px; margin-bottom: 18px; }
+    .soon { letter-spacing: 3px; font-size: 13px; opacity: 0.8; margin-bottom: 28px; }
+
+    .info { font-size: 14px; line-height: 1.8; opacity: 0.85; margin-bottom: 24px; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #b0273d, #7a1423);
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+
+    footer { margin-top: 26px; font-size: 12px; opacity: 0.5; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Page 2 */
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="container" id="page1">
+    <div class="card">
+      <div class="logo">YC</div>
+      <h1>Yashil Carpet</h1>
+      <div class="domain">yashilcarpet.ir</div>
+      <div class="soon">COMING SOON</div>
+
+      <div class="info">
+        📞 +98 991 191 1683<br />
+        ✉️ Yashil.razmiyanzade@gmail.com
+      </div>
+
+      <a href="#" class="btn" onclick="showPage2()">Discover Our Story</a>
+
+      <footer>© 2025 Yashil Carpet — Premium Carpet Brand</footer>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="container hidden" id="page2">
+    <div class="card">
+      <h1>Our Vision</h1>
+      <div class="info">
+        <p><strong>Yashil Carpet</strong> will soon present a refined collection crafted from the finest fibers, inspired by the timeless heritage and artistry of <strong>Ancient Persia</strong>.</p>
+        <br />
+        <p>Our designs embody elegance, authenticity, and cultural depth — bringing history, luxury, and master craftsmanship together in every weave.</p>
+      </div>
+
+      <a href="#" class="btn" onclick="showPage1()">Back</a>
+    </div>
+  </div>
+
+  <script>
+    function showPage2() {
+      document.getElementById('page1').classList.add('hidden');
+      document.getElementById('page2').classList.remove('hidden');
+    }
+    function showPage1() {
+      document.getElementById('page2').classList.add('hidden');
+      document.getElementById('page1').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
